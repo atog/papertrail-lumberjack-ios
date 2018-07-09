@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PaperTrailLumberjack"
-  s.version          = "2.0.0"
+  s.version          = "2.0.1"
   s.summary          = "A CocoaLumberjack logger to post logs to papertrailapp.com"
   s.description      = <<-DESC
 A CocoaLumberjack logger to post log messages to papertrailapp.com. Currently, only posts via unsecured UDP sockets.
@@ -12,10 +12,10 @@ A CocoaLumberjack logger to post log messages to papertrailapp.com. Currently, o
   s.platform         = :ios
 
   s.requires_arc = true
-  s.ios.deployment_target = '5.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'Classes'
 
-  s.dependency 'CocoaLumberjack', '~> 2.2.0'
+  s.dependency 'CocoaLumberjack'
   s.dependency 'CocoaAsyncSocket'
 end
